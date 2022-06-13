@@ -1,0 +1,180 @@
+/*
+    estilos.css
+    Código con los estilos usados en la página de los hoteles rurales
+    Autor: Álvaro García Fuentes
+*/
+@font-face {
+    font-family: 'OldLondon';
+    src: url('font/OldLondon.ttf');
+}
+
+/* Estilos por defecto (para móviles) */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgreen;
+    display: block;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(to right, brown, limegreen);
+    padding: 2em;
+}
+
+h1, header h2, .titulo{
+        font-family: "OldLondon";
+        text-align: center;
+        text-shadow: 10px 5px gray;
+}
+
+nav {
+    background-color: rgb(77, 20, 20);
+    padding: 0.1em;
+    box-shadow: 0px 5px 5px gray;
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    margin-right: 1em;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+nav ul li a{
+    border: solid lightgreen;
+    width: 96%;
+    box-shadow: 5px 5px gray;
+}
+
+#iniciaSesion {
+    width: 100%;
+}
+
+nav ul li a, #iniciaSesion {
+    font-weight: bold;
+    border-radius: 1em;
+    display: block;
+    padding: 0.3em;
+    margin: 0.1em;
+    margin-left: 0.5em;
+    box-shadow: 5px 5px gray;
+
+}
+
+nav ul li a:hover{
+    background-color: lightgreen;
+    color:rgb(77, 20, 20);
+}
+
+a {
+    font-weight: bold;
+    color: lightgreen;
+    text-decoration: none;
+}
+
+/*scroll para móvil*/
+@media screen and (max-width: 480px){
+    main {
+        display: flex;
+        height: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+    }
+
+    article {
+        flex: 25em 0 0;
+        scroll-snap-align: start;
+        object-fit: cover;
+    }
+}
+
+
+article {
+    background-color: lightyellow;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin: 0.5em;
+    box-shadow: 5px 5px gray;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#precio {
+    font-weight: bold;
+    font-size: 2em;
+    color: red;
+}
+
+#compra {
+    border-radius: 1em;
+    padding: 1em;
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(77, 20, 20);
+    box-shadow: 0px -5px 5px gray;
+    color: white;
+    padding: 1px;
+    margin-top: 10px;
+}
+
+#rrss{
+    display: flex;
+    align-tracks: center;
+}
+/*No confundir con el anterior, son elementos distintos.*/
+.rrss{
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+}
+
+/* Estilos responsive para los demás dispositivos. */
+    /* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {  
+    nav{
+        padding: 0;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+    nav ul li{
+        width: 100%;
+        margin: 0.5em;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+  
+    /* PC */
+@media only screen and (min-width: 769px) {
+    nav{
+        padding: 0;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+    nav ul li{
+        width: 100%;
+        margin: 0.5em;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
