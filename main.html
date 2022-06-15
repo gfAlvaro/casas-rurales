@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Álvaro García Fuentes" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/estilosMain.css" />
+        <title>Hoteles Rurales</title>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="imagenes/logo.png">
+            <h1>HOTELES RURALES</h1>
+            <h2>Alojamientos con encanto</h2>
+            <nav>    
+                <a href="index.html">CERRAR SESION</a>
+            </nav>
+        </header>
+        <aside>
+            <form action="inside.html" method="POST">
+                <label>Buscar:  <input type="text"></input></label><br>
+                <label>Fecha de entrada:  <input type="date"></input></label><br>
+                <label>Fecha de salida:  <input type="date"></input></label><br>
+                <label>criterio de orden: <select>
+                    <option>Por nombre</option>
+                    <option>Por fecha de expiración</option>
+                    <option>Por precio</option>
+                    <option>Por fecha de expiración</option>
+                </select></label><br>
+                <button type="submit">Buscar</button>
+            </form>
+        </aside>
+        <main>
+            <article>
+                <h2 class="titulo">El Asentadero</h2>
+                <img src="imagenes/asentadero.jpg">
+                <div id="precio">670€ la semana</div>
+                <p id="localización">Villatripas de Arriba - Provincia de Fary City</p>
+                <p id="descripción">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p><b>La oferta incluye:</b></p>
+                <ul>
+                    <li>Aire Acondicionado.</li>
+                    <li>Piscina.</li>
+                </ul>
+                <p id="plazas"><b>Plazas:</b> Oferta para 8 personas.</p>
+                <p id="fechas"><b>Fechas:</b> Del 1 de Enero al 30 de Enero</p>
+                <button id="info" onclick="location.href='inside.html'">Más información</button>
+            </article>
+            <article>
+                <h2 class="titulo">La Casa de La Abuela</h2>
+                <img src="imagenes/abuela.jpg">
+                <div id="precio">700€ la semana</div>
+                <p id="localización">Valdeburrillo del becerril - Condado de Paquirrín</p>
+                <p id="descripción">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p><b>La oferta incluye:</b></p>
+                <ul>
+                    <li>Aire Acondicionado.</li>
+                    <li>Piscina.</li>
+                </ul>
+                <p id="plazas"><b>Plazas:</b> Oferta para 9 personas.</p>
+                <p id="fechas"><b>Fechas:</b> Del 1 de Febrero al 30 de Marzo</p>
+                <button id="info" onclick="location.href='inside.html'">Más información</button>
+            </article>
+
+            <article>
+                <h2 class="titulo">El Molino de Viento</h2>
+                <img src="imagenes/molino.jpg">
+                <div id="precio">500€ la semana</div>
+                <p id="localización">Balsadera de Gamoburgo - La Comarca</p>
+                <p id="descripción">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p><b>La oferta incluye:</b></p>
+                <ul>
+                    <li>Bien comunicado</li>
+                    <li>Buenas vistas.</li>
+                </ul>
+                <p id="plazas"><b>Plazas:</b> Oferta para 7 personas.</p>
+                <p id="fechas"><b>Fechas:</b> Del 1 de Enero al 30 de Enero</p>
+                <button id="info" onclick="location.href='inside.html'">Más información</button>
+            </article>
+            <article>
+                <h2 class="titulo">El Mirador</h2>
+                <img src="imagenes/mirador.jpg">
+                <div id="precio">800€ la semana</div>
+                <p id="localización">Sierra Alta - Provincia de Hill Spencer</p>
+                <p id="descripción">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p><b>La oferta incluye:</b></p>
+                <ul>
+                    <li>Aire Acondicionado.</li>
+                    <li>Buenas vistas.</li>
+                </ul>
+                <p id="plazas"><b>Plazas:</b> Oferta para 5 personas.</p>
+                <p id="fechas"><b>Fechas:</b> Del 1 de Septiembre al 30 de Septiembre</p>
+                <button id="info" onclick="location.href='inside.html'">Más información</button>
+            </article>
+            <article>
+                <h2 class="titulo">La Granja del Pueblo</h2>
+                <img src="imagenes/granja.jpg">
+                <div id="precio">620€ la semana</div>
+                <p id="localización">El Quinto Pino - Donde Cristo Perdió la Sandalia</p>
+                <p id="descripción">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p><b>La oferta incluye:</b></p>
+                <ul>
+                    <li>Wi-fi gratuita.</li>
+                    <li>Buenas vistas.</li>
+                </ul>
+                <p id="plazas"><b>Plazas:</b> Oferta para 6 personas.</p>
+                <p id="fechas"><b>Fechas:</b> Del 1 de Julio al 31 de Julio</p>
+                <button id="info" onclick="location.href='inside.html'">Más información</button>
+            </article>
+            <article>
+                <h2 class="titulo">El Retiro de La Sierra</h2>
+                <img src="imagenes/retiro.jpg">
+                <div id="precio">560€ la semana</div>
+                <p id="localización">Quién Sabe Dónde</p>
+                <p id="descripción">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p><b>La oferta incluye:</b></p>
+                <ul>
+                    <li>Aire Acondicionado.</li>
+                    <li>Buenas vistas.</li>
+                </ul>
+                <p id="plazas"><b>Plazas:</b> Oferta para 4 personas.</p>
+                <p id="fechas"><b>Fechas:</b> Del 1 de Mayo al 31 de Mayo</p>
+                <button id="info" onclick="location.href='inside.html'">Más información</button>
+            </article>
+        </main>
+        <footer>
+            <div id="rrss">
+                <a href="#"><img class="rrss" src="imagenes/facebook.png"></a>
+                <a href="#"><img class="rrss" src="imagenes/instagram.png"></a>
+                <a href="#"><img class="rrss" src="imagenes/twitter.png"></a></br>
+            </div>
+            <p>Iconos RR.SS. cortesía de: <a href="https://www.flaticon.es/iconos-gratis/social" title="social iconos">Social iconos creados por riajulislam - Flaticon</a></p>
+            <p>Autor: Álvaro García Fuentes</p>
+        </footer>
+    </body>
+</html>

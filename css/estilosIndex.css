@@ -1,0 +1,122 @@
+/*
+    estilos.css
+    Código con los estilos usados en la página de los hoteles rurales
+    Autor: Álvaro García Fuentes
+*/
+@font-face {
+    font-family: 'OldLondon';
+    src: url('../font/OldLondon.ttf');
+}
+
+/* Estilos por defecto (para móviles) */
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+}
+
+header {
+    background-color: rgb(77, 20, 20);
+    padding: 2em;
+    display: block;
+    box-shadow: 0px 5px 5px gray;
+}
+
+#logo {
+    width: 125px;
+    height: auto;
+    animation-duration: 1s;
+    animation-name: chicogrande;
+}
+  
+@keyframes chicogrande {
+    from {
+        width: 50px;
+        height: auto;
+    }  
+    to {
+        width: 125px;
+        height: auto;
+    }
+}
+  
+
+h1, header h2 {
+        font-family: "OldLondon";
+        text-align: center;
+        text-shadow: 10px 5px gray;
+}
+
+main{
+    padding-top: 5em;
+    text-align: center;
+    flex: 10 1 auto;
+}
+
+#inicioSesion {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: rgb(77, 20, 20);
+    box-shadow: 0px -5px 5px gray;
+    color: white;
+    padding: 1px;
+    margin-top: 10px;
+}
+
+#rrss{
+    display: flex;
+    align-tracks: center;
+}
+/*No confundir con el anterior, son elementos distintos.*/
+.rrss{
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+}
+
+/*para tablet y PC*/
+@media only screen and (min-width: 801px){
+    header {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 15em;
+        padding-right: 15em;
+    }
+
+    #logo {
+        grid-row: 1/3;
+        grid-column: 1;
+    }
+
+    header h1 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    header h2 {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    #inicioSesion {
+        display: flex;
+        flex-direction: column;
+        padding-right: 10em;
+        padding-left: 10em;
+    }
+
+    #inicioSesion * {
+        margin: 0.1em;
+    }
+
+    footer {
+        display: flex;
+    }
+}
